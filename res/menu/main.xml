@@ -3,15 +3,35 @@
     tools:context="edu.np.ece.mapg.mp3.s10148494mp3.MainActivity" >
 
     <item
-        android:id="@+id/action_search"
-        android:icon="@drawable/ic_action_search"
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_action_new"
         android:orderInCategory="100"
         android:showAsAction="always"
-        android:title="@string/action_search"/>
+        android:title="@string/action_new"/>
     <item
+        android:id="@+id/action_call"
+        android:icon="@drawable/ic_action_call"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/action_call"/>
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@drawable/ic_action_edit"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/action_edit"/>
+    <item
+        android:id="@+id/action_delet"
+        android:icon="@drawable/ic_action_discard"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/action_delete"/>
+    <!--
+         <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="@string/action_settings"/>
+        android:title="@string/action_settings"/>
+    -->
 
 </menu>

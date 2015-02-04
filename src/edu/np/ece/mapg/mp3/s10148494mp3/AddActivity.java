@@ -1,26 +1,25 @@
 package edu.np.ece.mapg.mp3.s10148494mp3;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 
-public class MainActivity extends Activity {
+public class AddActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_add);
+		
+		getActionBar().setDisplayHomeAsUpEnabled(true);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		MenuInflater inflater = getMenuInflater();
-		inflater.inflate(R.menu.main, menu);
-		return super.onCreateOptionsMenu(menu);
+		getMenuInflater().inflate(R.menu.add, menu);
+		return true;
 	}
 
 	@Override
@@ -32,18 +31,7 @@ public class MainActivity extends Activity {
 		/*if (id == R.id.action_settings) {
 			return true;
 		}*/
-		 if (id == R.id.action_add){
-			 Intent i = new Intent(this, AddActivity.class);
-			 startActivity(i);
-			return true;
-		}
-		else if (id == R.id.action_call){
-			return true;
-		}
-		else if (id == R.id.action_edit){
-			return true;
-		}
-		else if (id == R.id.action_delet){
+		if (id == R.id.action_save){
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
