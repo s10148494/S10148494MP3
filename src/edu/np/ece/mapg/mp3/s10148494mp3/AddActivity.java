@@ -1,11 +1,16 @@
 package edu.np.ece.mapg.mp3.s10148494mp3;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 
 public class AddActivity extends Activity {
+	
+	EditText etName;
+	EditText etNumber;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -13,6 +18,8 @@ public class AddActivity extends Activity {
 		setContentView(R.layout.activity_add);
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		
+		etName = (EditText) this.findViewById(R.id.etName);
 	}
 
 	@Override
@@ -32,7 +39,14 @@ public class AddActivity extends Activity {
 			return true;
 		}*/
 		if (id == R.id.action_save){
-			return true;
+			String strName = etName.getText().toString();
+			
+			Intent main = new Intent(); 
+			main.putExtra("Data", strName);
+			
+			setResult(RESULT_OK, main);
+			
+			finish();
 		}
 		return super.onOptionsItemSelected(item);
 	}
