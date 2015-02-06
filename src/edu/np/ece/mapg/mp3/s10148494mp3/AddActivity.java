@@ -35,9 +35,7 @@ public class AddActivity extends Activity {
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
-		/*if (id == R.id.action_settings) {
-			return true;
-		}*/
+		
 		if (id == R.id.action_save){
 			String strName = etName.getText().toString();
 			
@@ -48,6 +46,19 @@ public class AddActivity extends Activity {
 			
 			finish();
 		}
+		else if (id == R.id.action_cancel){
+			Intent main = new Intent();
+			setResult(RESULT_CANCELED, main);
+			finish();
+		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		// TODO Auto-generated method stub
+		super.onActivityResult(requestCode, resultCode, data);
+		String returnedData = data.getStringExtra("Name");
+		etName.setText(returnedData.toString());
 	}
 }

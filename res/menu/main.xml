@@ -9,23 +9,22 @@
         android:showAsAction="always"
         android:title="@string/action_new"/>
     <item
-        android:id="@+id/action_edit"
-        android:icon="@drawable/ic_action_edit"
-        android:orderInCategory="100"
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_search"
+        android:orderInCategory="200"
         android:showAsAction="always"
-        android:title="@string/action_edit"/>
+        android:title="@string/action_search"/>
+    <item
+        android:id="@+id/action_map"
+        android:icon="@drawable/ic_action_map"
+        android:orderInCategory="300"
+        android:showAsAction="always"
+        android:title="@string/action_map"/>
     <item
         android:id="@+id/action_delet"
         android:icon="@drawable/ic_action_discard"
-        android:orderInCategory="100"
+        android:orderInCategory="400"
         android:showAsAction="always"
         android:title="@string/action_delete"/>
-    <!--
-         <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:showAsAction="never"
-        android:title="@string/action_settings"/>
-    -->
 
 </menu>

@@ -3,6 +3,14 @@
 
     <string-array name="data">
         <item>Sugan</item>
+        <item>Jaryl</item>
+        <item>Reuben</item>
+        <item>Janson</item>
+        <item>Ngee Ann Poly</item>
+        <item>Rich Miner</item>
+        <item>Andy Rubin</item>
+        <item>Nick Sears</item>
+        <item>Steve Jobs</item>
     </string-array>
 
 </resources>
