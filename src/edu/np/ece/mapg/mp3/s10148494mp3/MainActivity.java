@@ -31,7 +31,7 @@ public class MainActivity extends Activity {
 		arrayList = new ArrayList<String>(Arrays.asList(strData));
 
 		adapter = new ArrayAdapter<String>(this,
-				android.R.layout.select_dialog_singlechoice, arrayList);
+				android.R.layout.select_dialog_multichoice, arrayList);
 		listView1 = (ListView) this.findViewById(R.id.listView1);
 		listView1.setAdapter(adapter);
 	}
